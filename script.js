@@ -1,24 +1,18 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if(this.scrollY > 20){
+$(document).ready(function() {
+    $(window).scroll(function() {
+        if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
-        }else{
+        } else {
             $('.navbar').removeClass("sticky");
         }
-    
-        if(this.scrollY > 500){
+
+        if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
-        }else{
+        } else {
             $('.scroll-up-btn').removeClass("show");
         }
     });
-
-    $('.navbar .menu li a').click(function(){
-    
-        $('html').css("scrollBehavior", "smooth");
-    });
-    
-    $('.menu-btn').click(function(){
+    $('.menu-btn').click(function() {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
@@ -30,13 +24,13 @@ $(document).ready(function(){
     });
 });
 
-$(function(){
-$('.chart').easyPieChart({
-    size:160,
-    barColor:"crimson",
-    scaleLength: 0,
-    lineWidth: 15,
-    lineCap:"Circle",
-    animate:2000,
-})
+$(function() {
+    $('.chart').easyPieChart({
+        size: 160,
+        barColor: "crimson",
+        scaleLength: 0,
+        lineWidth: 15,
+        lineCap: "Circle",
+        animate: 2000,
+    })
 })
