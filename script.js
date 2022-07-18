@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //nav bar
     $(window).scroll(function() {
         if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
@@ -16,14 +17,14 @@ $(document).ready(function() {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
-
+// Enter in any string, and watch it type at the speed you've set
     var typed = new Typed(".typing", {
         strings: ["computer science student"],
         typeSpeed: 100,
         loop: false
     });
 });
-
+//  Progress Bar 
 $(function() {
     $('.chart').easyPieChart({
         size: 160,
